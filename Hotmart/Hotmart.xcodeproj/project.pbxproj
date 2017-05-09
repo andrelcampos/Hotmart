@@ -11,7 +11,11 @@
 		87664F501EBCCBA300500634 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87664F4F1EBCCBA300500634 /* Assets.xcassets */; };
 		87664F531EBCCBA300500634 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87664F511EBCCBA300500634 /* LaunchScreen.storyboard */; };
 		87664F621EBCCF8600500634 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87664F611EBCCF8600500634 /* Main.storyboard */; };
-		87664F641EBCCFA500500634 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87664F631EBCCFA500500634 /* ViewController.swift */; };
+		87664F681EBCD7C400500634 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87664F671EBCD7C400500634 /* MainVC.swift */; };
+		87664F6C1EBCD8F100500634 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87664F6B1EBCD8F100500634 /* SWRevealViewController.m */; };
+		87664F6E1EBCDAFF00500634 /* DashBoardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87664F6D1EBCDAFF00500634 /* DashBoardVC.swift */; };
+		87664F701EBCDB5700500634 /* MessagesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87664F6F1EBCDB5700500634 /* MessagesVC.swift */; };
+		87664F721EBCDB6800500634 /* MySalesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87664F711EBCDB6800500634 /* MySalesVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,8 +24,14 @@
 		87664F4F1EBCCBA300500634 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87664F521EBCCBA300500634 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87664F541EBCCBA300500634 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		87664F611EBCCF8600500634 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		87664F631EBCCFA500500634 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		87664F611EBCCF8600500634 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Main/Main.storyboard; sourceTree = "<group>"; };
+		87664F671EBCD7C400500634 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		87664F691EBCD8F000500634 /* Hotmart-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hotmart-Bridging-Header.h"; sourceTree = "<group>"; };
+		87664F6A1EBCD8F100500634 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		87664F6B1EBCD8F100500634 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		87664F6D1EBCDAFF00500634 /* DashBoardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashBoardVC.swift; sourceTree = "<group>"; };
+		87664F6F1EBCDB5700500634 /* MessagesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesVC.swift; sourceTree = "<group>"; };
+		87664F711EBCDB6800500634 /* MySalesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySalesVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +74,7 @@
 		87664F5A1EBCCEF700500634 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				87664F611EBCCF8600500634 /* Main.storyboard */,
 				87664F5B1EBCCEF700500634 /* Dashboard */,
 				87664F5C1EBCCEF700500634 /* Main */,
 				87664F5D1EBCCEF700500634 /* Messages */,
@@ -75,6 +86,7 @@
 		87664F5B1EBCCEF700500634 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				87664F6D1EBCDAFF00500634 /* DashBoardVC.swift */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -82,8 +94,7 @@
 		87664F5C1EBCCEF700500634 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				87664F611EBCCF8600500634 /* Main.storyboard */,
-				87664F631EBCCFA500500634 /* ViewController.swift */,
+				87664F671EBCD7C400500634 /* MainVC.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -91,6 +102,7 @@
 		87664F5D1EBCCEF700500634 /* Messages */ = {
 			isa = PBXGroup;
 			children = (
+				87664F6F1EBCDB5700500634 /* MessagesVC.swift */,
 			);
 			path = Messages;
 			sourceTree = "<group>";
@@ -98,6 +110,7 @@
 		87664F5E1EBCCEF700500634 /* MySales */ = {
 			isa = PBXGroup;
 			children = (
+				87664F711EBCDB6800500634 /* MySalesVC.swift */,
 			);
 			path = MySales;
 			sourceTree = "<group>";
@@ -105,6 +118,9 @@
 		87664F5F1EBCCF0900500634 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				87664F6A1EBCD8F100500634 /* SWRevealViewController.h */,
+				87664F6B1EBCD8F100500634 /* SWRevealViewController.m */,
+				87664F691EBCD8F000500634 /* Hotmart-Bridging-Header.h */,
 			);
 			path = Vendors;
 			sourceTree = "<group>";
@@ -152,6 +168,7 @@
 				TargetAttributes = {
 					87664F441EBCCBA300500634 = {
 						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -192,8 +209,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87664F641EBCCFA500500634 /* ViewController.swift in Sources */,
+				87664F681EBCD7C400500634 /* MainVC.swift in Sources */,
+				87664F6E1EBCDAFF00500634 /* DashBoardVC.swift in Sources */,
 				87664F491EBCCBA300500634 /* AppDelegate.swift in Sources */,
+				87664F701EBCDB5700500634 /* MessagesVC.swift in Sources */,
+				87664F6C1EBCD8F100500634 /* SWRevealViewController.m in Sources */,
+				87664F721EBCDB6800500634 /* MySalesVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,10 +329,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Hotmart/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.andrecampos.Hotmart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Hotmart/Vendors/Hotmart-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -320,10 +344,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Hotmart/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.andrecampos.Hotmart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Hotmart/Vendors/Hotmart-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
